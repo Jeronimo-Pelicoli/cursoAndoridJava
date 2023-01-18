@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConstraintLoginActivity">
+
+    <View
+        android:id="@+id/viewMenu"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#855E52"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_arrow_left"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#fff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cappuccino"
+        android:textColor="#FFF"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewMenu"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageClock"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_clock"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/imageFavorite"
+        app:layout_constraintTop_toBottomOf="@+id/viewMenu"
+        app:tint="#855E52" />
+
+    <ImageView
+        android:id="@+id/imageFavorite"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_baseline_favorite_24"
+        app:layout_constraintLeft_toRightOf="@id/imageClock"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewMenu"
+        app:tint="#855E52" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 minutos"
+        app:layout_constraintLeft_toLeftOf="@+id/imageClock"
+        app:layout_constraintRight_toRightOf="@+id/imageClock"
+        app:layout_constraintTop_toBottomOf="@id/imageClock" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="300 vezes"
+        app:layout_constraintLeft_toLeftOf="@+id/imageFavorite"
+        app:layout_constraintRight_toRightOf="@+id/imageFavorite"
+        app:layout_constraintTop_toBottomOf="@id/imageFavorite" />
+
+    <View
+        android:id="@+id/viewSeparator"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="16dp"
+        android:background="#855E52"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageFavorite" />
+
+    <TextView
+        android:id="@+id/textDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="uma simples e perfeitamente extraida dose"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewSeparator" />
+
+    <ImageView
+        android:id="@+id/imageIgrediente1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_chevron_right"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDescricao"
+        app:tint="#855E52" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

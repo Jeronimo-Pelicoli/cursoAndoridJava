@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageActivity">
+
+    <ImageView
+        android:src="@drawable/ic_baseline_favorite_24"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:tint="#6F4180"/>
+
+</LinearLayout>
